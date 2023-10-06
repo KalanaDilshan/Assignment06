@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
     <style>
+        body{
+            background-color: #0D1282;
+        }
 
         header {
             position: sticky;
@@ -26,37 +29,37 @@
         /*navbar*/
         nav {
             position: relative;
-            border-bottom: 1px solid #E9B824;
+            border-bottom: 1px solid black;
             z-index: 9999;
+            background-color:#F0DE36
         }
         .nav-link {
             font-style: italic;
         }
         #btn-search {
-            border: 1px solid #E9B824;
-            color: #E9B824;
+            border: 1px solid white;
+            color: black;
         }
         #btn-search:hover {
-            background-color: #E9B824;
-            color: white;
+            background-color: #EF9595;
+            color: black;
         }
         #search-input {
-            border: 1px solid #E9B824;
+            border: 1px solid black;
         }
 
         /*main > select details inputs*/
         #select-order-detail {
-            border: 1px solid #E9B824;
+            border: 1px solid black;
             margin: 3px 10px ;
             padding: 0 0 50px 0;
-            position: sticky;
             top: 85px;
-            background-color: white;
+            background-color: #F5E8B7;
 
         }
 
         #title {
-            background-color: #E9B824;
+            background-color: white;
             height: 50px;
             position: relative;
             margin-bottom: 10px;
@@ -67,6 +70,7 @@
             left: 0;
             margin: auto;
             top: 3px;
+
         }
         form>div>div>div>input {
             margin-bottom: 10px;
@@ -75,14 +79,14 @@
             font-weight: bold;
         }
 
-        /*add-remove-btns*/
+        /*btns*/
         #add-remove-btns {
             position: absolute;
             right: 20px;
         }
         #table {
             margin: 20px 10px 0 10px;
-            border: 1px solid #E9B824;
+            border: 3px solid white;
         }
         #shop-name {
             width: fit-content;
@@ -91,7 +95,7 @@
         }
         #shop-name>span {
             font-size: 25px;
-            color: #E9B824;
+            color: black;
             font-weight: bold;
             font-style: italic;
         }
@@ -108,10 +112,13 @@
             margin-top: 10px;
             padding-bottom: 10px;
         }
-        #btn-order>button:hover {
-            color: #E9B824;
+        #btn-order>button {
+            color: black;
+            background-color: #EF9595;
+            border: 1px solid black;
+        }
+        #total>label{
             background-color: white;
-            border: 1px solid #E9B824;
         }
 
     </style>
@@ -119,10 +126,10 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="assets/logo.png" alt="Logo" width="50" class="d-inline-block align-text-top">
+                <img src="assets/download-removebg-preview.png" alt="Logo" width="50" class="d-inline-block align-text-top">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -131,7 +138,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"id="shop-name">
-                        <span >GoodFood</span>
+                        <span >Dilshan Food Item</span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Item</a>
@@ -140,10 +147,10 @@
                         <a class="nav-link" href="customer.html">Customer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="place_order.html">Place Order</a>
+                        <a class="nav-link" href="place_order.html">Place_Order</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="order_detail.html">Order Details</a>
+                        <a class="nav-link" href="order_detail.html">Order_Details</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -164,13 +171,13 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="customer-id">customer id :</label>
+                            <label for="customer-id">customer_id :</label>
                             <input type="text" class="form-control btn btn-light" id="customer-id" placeholder="C001" class="input">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="order-id ">order id :</label>
+                            <label for="order-id ">order_id :</label>
                             <input type="text" class="form-control btn btn-light" id="order-id " placeholder="O001" class="input">
                         </div>
                     </div>
@@ -184,34 +191,34 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="item-id">item id :</label>
+                            <label for="item-id">item_id :</label>
                             <input type="text" class="form-control btn btn-light" id="item-id" placeholder="I008" class="input">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="item-name">item name :</label>
-                            <input type="text" class="form-control btn btn-light" id="item-name" placeholder="rice" class="input">
+                            <label for="item-name">item_name :</label>
+                            <input type="text" class="form-control btn btn-light" id="item-name" placeholder="name of food" class="input">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="price">price :</label>
-                            <input type="text" class="form-control btn btn-light" id="price" placeholder="200.00" class="input">
+                            <input type="text" class="form-control btn btn-light" id="price" placeholder="1000.00" class="input">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="qty-on-hand">qty on hand :</label>
-                            <input type="text" class="form-control btn btn-light" id="qty-on-hand" placeholder="25" class="input">
+                            <label for="qty-on-hand">qty_on_hand :</label>
+                            <input type="text" class="form-control btn btn-light" id="qty-on-hand" placeholder="50" class="input">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="qty">qty :</label>
-                            <input type="text" class="form-control btn btn-light" id="qty" placeholder="2" class="input">
+                            <input type="text" class="form-control btn btn-light" id="qty" placeholder="3" class="input">
                         </div>
                     </div>
                 </div>
@@ -224,33 +231,23 @@
     </section>
     <section id="table">
         <div class="table-responsive">
-            <table  class="table table-striped table-bordered caption-top">
+            <table class="table table-success table-striped">
                 <thead>
                 <tr>
-                    <th scope="col">Customer Id</th>
-                    <th scope="col">Item Id</th>
-                    <th scope="col">Item Name</th>
+                    <th scope="col">Customer_Id</th>
+                    <th scope="col">Item_Id</th>
+                    <th scope="col">Item_Name</th>
                     <th scope="col">Price</th>
                     <th scope="col">QTY</th>
                     <th scope="col">Total</th>
-                    <th scope="col">Order Id</th>
+                    <th scope="col">Order_Id</th>
                     <th scope="col">Date</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
+                    <td>larry</td>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
@@ -259,18 +256,8 @@
                     <td>@mdo</td>
                 </tr>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
+                    <th scope="row">2</th>
+                    <td>larry</td>
                     <td>Mark</td>
                     <td>Otto</td>
                     <td>@mdo</td>
@@ -279,30 +266,30 @@
                     <td>@mdo</td>
                 </tr>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
+                    <th scope="row">3</th>
+                    <td>larry</td>
                     <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>Otto</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                 </tr>
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">4</th>
+                    <td>larry</td>
                     <td>Mark</td>
                     <td>Otto</td>
-                    <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                 </tr>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
+                    <th scope="row">5</th>
+                    <td>larry</td>
                     <td>Otto</td>
-                    <td>Otto</td>
+                    <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
