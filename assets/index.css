@@ -1,0 +1,110 @@
+body{
+    background-color: #0D1282;
+}
+header {
+    position: sticky;
+    top: 0;
+}
+/*navbar*/
+nav {
+    position: relative;
+    border-bottom: 1px solid black;
+    background-color:#F0DE36
+}
+.nav-link {
+    font-style: italic;
+}
+#btn-search {
+    border: 1px solid white;
+    color: black;
+}
+#btn-search:hover {
+    background-color: #EF9595;
+    color: black;
+}
+#search-input {
+    border: 1px solid black;
+}
+
+/*table*/
+#table {
+    margin: 20px 30px 0 30px;
+    border: 3px solid white;
+}
+
+/*crud buttons*/
+#crudButtons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+#crudButtons>button {
+    width: 20vw;
+    margin: 0 4px;
+    font-size: 1.2vw;
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EF9595;
+    border: 2px solid white;
+}
+#shop-name {
+    width: fit-content;
+    height: fit-content;
+    margin: -1px 10px 0 -10px;
+}
+#shop-name>span {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*popup modal for add & update item*/
+#exampleModalLabel {
+    /*margin-left: 180px;*/
+    letter-spacing: 0.1vw;
+}
+#exampleModalLabel-update {
+    /*margin-left: 170px;*/
+    letter-spacing: 0.1vw;
+}
+#modal-body, #modal-body-update {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#modal-body>input, #modal-body-update>input {
+    width: 280px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+}
+#modal-body>input:hover, #modal-body-update>input:hover {
+    background-color: whitesmoke;
+}
+#modal-body>label, #modal-body-update>label {
+    margin-top: 3px;
+}
+#add_btn, #update-btn {
+    width: 140px;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #E9B824;
+    border: 1px #E9B824;
+}
+#add_btn:hover, #update-btn:hover {
+    background-color: white;
+    border: 2px solid #E9B824;
+    color: #E9B824;
+
+}
+#modal-header, #modal-header-update {
+    background-color: #E9B824;
+}
